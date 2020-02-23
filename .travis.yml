@@ -1,0 +1,13 @@
+language: elixir
+elixir:
+- '1.10.1'
+otp_release:
+- '22.0'
+services:
+- postgresql
+script:
+- mix test
+deploy:
+  provider: heroku
+  api_key:
+    secure: MVE74YMo6HaJeCdjPKLjMZ9PWWhwJIgbChvRmhW/laXaW0Gw+DlhG2Emp2cQoKKfrm0iCZVfNZym99ko4h9ziBdPOrCwgDWVCPUPlSQf4eEUT3FKnL0fNjc7NEyhTLcXLAscNnNaUN/RJYF5faV40Meu+NqObbWjtP9K/JOblQWxRyNNjCzp37AW6EloMQW+N1k7lTSuf6+kciXdya0bz9Kgud+CCpPBpU+zcm/KEZf6k877g403a/In6nN5EniUKvucPom6Kp6JyBDGntDadAsKypVVm9Sw02EFp81U6snN9Os0K1ugT7T6TYzNY3uyG4mYRbOs2Bba2NDt54g6U69j5f6K5jfw5J11outWmlwaPEdnHszuaVBg1EsDxUbowj7b/7UyqeWuztqiuTY39grPRLrW1n/GwHiaJTxpqaxxM8mAIsU/qXcDZxt1UAU+bhOSD36VQz9iIJvcdxb8xasfghcBRU7/YQxrbaxwUaE40+86S9JVkTzrLNlLQuc5bos5IYSxliLLNdMrVcjmDrLANxkqhaK2QSQA+vtk8PkESYzBy0kVjg63L2KIklXH1QJk7liMs3IZ35qCqMhFKgRKSHpcohAsx21HLbn2cHc4kptCjq2DYH/XxtTkaFJweGDMQh3vmvOE+yWE9s0llgJMy68wtFzfx0VZkbo0PEk=
